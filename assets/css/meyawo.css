@@ -604,6 +604,7 @@ pre code {
           flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  justify-content: center;
 }
 
 .no-gutters {
@@ -10757,6 +10758,8 @@ button.bg-dark:focus {
 
 .font-weight-normal {
   font-weight: 400 !important;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
 }
 
 .font-weight-bold {
@@ -11078,6 +11081,26 @@ h1, h2, h3, h4, h5, h6 {
   color: #695aa6;
 }
 
+.small-h6 {
+  color: #695aa6;
+  font-weight: 400;
+  font-family: 'Baloo Paaji', cursive;
+  font-size: 1.7rem;
+  text-align: left;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.small-h6:hover {
+  color: #493f75;
+  /*funny underlined with transition*/
+  text-decoration: underline;
+  text-decoration-color: #493f75;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+  transition: all 0.3s;
+}
+
 .my-font {
   font-family: 'Baloo Paaji', cursive;
 }
@@ -11165,6 +11188,8 @@ p {
   visibility: hidden;
   -webkit-transition: all, 0.3s;
   transition: all, 0.3s;
+  font-size: 0.9rem;
+  width: 230px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -11191,10 +11216,13 @@ p {
   display: block;
   position: relative;
   overflow: hidden;
+  border: 2px solid #695aa6;
+  border-radius: 20px;
 }
 
 .portfolio-card .portfolio-card-img {
   width: 100%;
+  height: 170px;
 }
 
 .portfolio-card .portfolio-card-overlay {
@@ -11215,6 +11243,7 @@ p {
   height: 0;
   border-radius: 50%;
   overflow: hidden;
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -12248,6 +12277,10 @@ pre .code {
   margin-bottom: 10px;
 }
 
+.rows2 {
+  margin-bottom: 30px;
+}
+
 .hastag {
   color: #695aa6;
   font-weight: bold;
@@ -12272,6 +12305,52 @@ pre .code {
   align-items:end;
   margin-top: 70px;
 }
+
+.colapse, .colapse1 {
+  display: none;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.colapse{
+  border-bottom: 1px solid #695aa6;
+}
+
+.ti-briefcase {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  /*center horizontally */
+  margin: 10px auto;
+}
+
+.ti-briefcase:hover {
+  color: #000;
+  font-weight: bold;
+}
+
+.inside-icon {
+  width: fit-content;
+}
+
+.service-card {
+  --c: #695aa6; /* the border color */
+  --b: 10px;    /* the border thickness*/
+  --g: 5px;     /* the gap on hover */  
+  --_g: #0000 25%,var(--c) 0;
+  background: 
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+     var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+    conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+     0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+  transition: .3s, background-position .3s .3s;
+}
+.service-card:hover {
+  --_i: 100%;
+  transition: .3s, background-size .3s .3s;
+}
+
 
 /* CSS for small devices */
 
