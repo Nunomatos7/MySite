@@ -12336,7 +12336,7 @@ pre .code {
 
 .service-card {
   --c: #695aa6; /* the border color */
-  --b: 10px;    /* the border thickness*/
+  --b: 5px;    /* the border thickness*/
   --g: 5px;     /* the gap on hover */  
   --_g: #0000 25%,var(--c) 0;
   background: 
