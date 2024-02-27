@@ -12330,6 +12330,12 @@ pre .code {
   border-bottom: 1px solid #695aa6;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
 .ti-briefcase {
   display: flex;
   justify-content: center;
