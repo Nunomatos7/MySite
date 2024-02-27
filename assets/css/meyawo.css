@@ -12215,12 +12215,24 @@ pre .code {
 }
 
 .about-img-holder {
-  min-width: 300px;
+  min-height: 300px;
   max-width: 300px;
   margin-right: 30px;
   border-radius: 50%;
   overflow: hidden; /* Hide overflow */
   position: relative; /* Position for overlay */
+  /* Add shadow */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+
+.about-img:hover {
+  transform: scale(1.1);  
+}
+
+.about-img {
+  transition: transform 0.3s ease;
 }
 
 .about-img-holder .about-img {
