@@ -413,25 +413,28 @@
             <p class="section-subtitle">How can we communicate?</p>
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+            <form action="https://formcarry.com/s/F-1lQ-RNbtY" method="POST" class="contact-form col-md-10 col-lg-8 m-auto" enctype="multipart/form-data">
                 <div class="form-row">
                     <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                     </div>
                     <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                        <input type="email" name="email" class="form-control" placeholder="Enter Email" required>
                     </div>
                     <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6" class="form-control"
-                            placeholder="Write Something"></textarea>
+                        <textarea name="message" id="message" rows="6" class="form-control"
+                            placeholder="Write Something" required></textarea>
                     </div>
                     <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                        <input type="submit" name="submit" value="Send Message" class="btn btn-outline-primary rounded">
                     </div>
                 </div>
             </form><!-- end of contact form -->
         </div><!-- end of container -->
     </section><!-- end of contact section -->
+
+
+    
 
     <!-- footer -->
     <div class="container">
@@ -478,7 +481,7 @@
                 }
         
                 fullScreenMedia.style.width = '90%'; // Set width to 90% of viewport width
-                fullScreenMedia.style.height = '90%'; // Set height to 90% of viewport height
+                fullScreenMedia.style.height = 'auto    '; // Set height to 90% of viewport height
                 fullScreenMedia.style.position = 'fixed';
                 fullScreenMedia.style.top = '50%'; // Center vertically
                 fullScreenMedia.style.left = '50%'; // Center horizontally
@@ -512,8 +515,8 @@
             var imgSrc = element.querySelector('img').src;
             var fullScreenImage = document.createElement('img');
             fullScreenImage.src = imgSrc;
-            fullScreenImage.style.width = 'auto'; // Set width to 90% of viewport width
-            fullScreenImage.style.height = '90%'; // Set height to 90% of viewport height
+            fullScreenImage.style.width = '90%'; // Set width to 90% of viewport width
+            fullScreenImage.style.height = 'auto'; // Set height to 90% of viewport height
             fullScreenImage.style.position = 'fixed';
             fullScreenImage.style.top = '50%'; // Center vertically
             fullScreenImage.style.left = '50%'; // Center horizontally

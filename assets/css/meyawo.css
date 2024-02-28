@@ -12359,6 +12359,7 @@ pre .code {
 .ti-briefcase:hover {
   color: #000;
   font-weight: bold;
+  width: fit-content !important;
 }
 
 .inside-icon {
@@ -12436,5 +12437,37 @@ pre .code {
   .time2 {
     font-size: 12px; /* Decrease font size for time */
     color: #888; /* Dim the color of time for better readability */
+  }
+  
+  .subtitle {
+    width: 100% !important;
+    padding-left: auto !important;
+    padding-right: 30px;
+  }
+
+  h6.title {
+    font-size: 20px !important;
+    margin: 0px !important;
+  }
+
+  .portfolio-card {
+    margin-bottom: 0px; /* Adjust margin between portfolio cards */
+  }
+
+  .inside-icon {
+    width: fit-content !important;
+  }
+
+  .ti-briefcase {
+    margin-bottom: 25px;
+  }
+
+  .rows2 {
+    margin-bottom: 0px;
+  }
+
+  .blog-card {
+    width: fit-content;
+    height: fit-content;
   }
 }
