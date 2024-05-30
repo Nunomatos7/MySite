@@ -39,21 +39,3 @@ $('#nav-toggle').click(function(){
 
 
 
-// Function to switch to the next slide
-function nextSlide() {
-  document.querySelector('.carousel-control-next').click();
-}
-
-// Function to switch to the previous slide
-function prevSlide() {
-  document.querySelector('.carousel-control-prev').click();
-}
-
-// Function to start the carousel auto-play
-function startCarousel() {
-  // Interval to switch slides every 3 seconds
-  setInterval(nextSlide, 7000);
-}
-
-// Call the function to start the carousel auto-play when the page loads
-window.onload = startCarousel;
