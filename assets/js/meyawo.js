@@ -52,7 +52,7 @@ function prevSlide() {
 // Function to start the carousel auto-play
 function startCarousel() {
   // Interval to switch slides every 3 seconds
-  setInterval(nextSlide, 5000);
+  setInterval(nextSlide, 7000);
 }
 
 // Call the function to start the carousel auto-play when the page loads
