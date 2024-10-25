@@ -12549,6 +12549,11 @@ pre .code {
   font-weight: bold;
 }
 
+#posts-container{
+  max-height: 990px;
+  overflow-y: scroll;
+}
+
 
 /* CSS for small devices */
 
